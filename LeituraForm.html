@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML - Exemplos básicos</title>
+<link rel="shortcut icon" href="imagens/favicon.ico" />
+<link rel="stylesheet" href="css/layout.css" type="text/css">
+</head>
+<body>
+
+<div id="navbar">
+  <a href="index.html">Home</a>
+  <a href="imagens.html">Imagens</a>
+  <a href="links.html">Links</a>
+  <a href="listas.html">Listas</a>
+  <a class="active" href="javascript:void(0)">Formulários</a>
+  <a href="tabelas.html">Tabelas</a>
+</div>
+<script type="text/javascript" src="script/script.js"></script>
+<div class="content">
+
+	<h3 id="rcorners1">FORMULÁRIOS</h3>
+
+	<form method="GET" action="LeituraForm.html">
+
+	<p class="subTitulo">Aqui temos a leitura de Formulário em JavaScript.</p>
+	
+	<script language=javascript>
+		var params = new Array();
+		params = getParameters();
+		for(var i = 0 ; i < params.length ; i++) {
+			document.write (params[i] + "<BR>");
+		}
+	</script>
+	<input type=button name="Retornar" value=" << Retornar" onclick="window.location.href='Formularios.html'">  
+
+</div>
+
+
+</body>
+</html>

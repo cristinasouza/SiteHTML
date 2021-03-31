@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML - Exemplos básicos</title>
+<link rel="shortcut icon" href="imagens/favicon.ico" />
+<link rel="stylesheet" href="css/layout.css" type="text/css">
+</head>
+<body>
+
+<div id="navbar">
+  <a href="index.html">Home</a>
+  <a href="imagens.html">Imagens</a>
+  <a href="links.html">Links</a>
+  <a href="listas.html">Listas</a>
+  <a class="active" href="javascript:void(0)">Formulários</a>
+  <a href="tabelas.html">Tabelas</a>
+</div>
+
+<div class="content">
+
+	<h3 id="rcorners1">FORMULÁRIOS</h3>
+
+	<form method="GET" action="LeituraForm.html">
+
+	<p class="subTitulo">Aqui temos um exemplo de Formulário em HTML.</p>
+
+	<table class="darkGreenTable">
+	
+	<tr>
+	<th COLSPAN=2>CADASTRO</th>
+	</tr>
+	
+	<tr>
+	<td>Nome:</td>
+	<td><input type=text name="Nome" pattern="[A-Za-z\s]{10,50}" title="Nome com 10 a 50 letras" autofocus required></td>
+	</tr>
+	
+	<tr>
+	<td>Senha:</td>
+	<td><input type=password pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required name="Senha" title="Deve conter pelo menos um n�mero e uma letra mai�scula e min�scula e pelo menos 8 ou mais caracteres."></td>
+	</tr>
+
+	<tr>
+	<td>Sexo:</td>
+	<td>
+	Masculino <input type=radio name="Sexo" value="Masc" required> 
+	Feminino  <input type=radio name="Sexo" value="Fem" required></td>
+	</tr>
+	<tr>
+	<td>Endereço:</td>
+	<td><textarea name="End" title="Endere�o com 10 a 100 caracteres" required></textarea></td>
+    </tr>
+	<tr>
+	<td>Sua opinião sobre a nossa página:</td> 
+	<td><select NAME="opiniao" size="1" required>
+        <option VALUE="">-- ? -- </option>
+        <option VALUE="Muito satisfeito">Muito satisfeito</option>
+        <option VALUE="Satisfeito">Satisfeito</option>
+        <option VALUE="Indiferente">Indiferente</option>
+        <option VALUE="Insatisfeito">Insatisfeito</option>
+      </select>
+	</td>
+	</tr>
+	<th COLSPAN=2>
+	<input type=submit name="Enviar" >  
+	<input type=reset name="Reset" value="Limpar Campos"></th>
+	</tr>
+	</table>
+	</form>
+
+</div>
+<script type="text/javascript" src="script/script.js"></script>
+
+</body>
+</html>

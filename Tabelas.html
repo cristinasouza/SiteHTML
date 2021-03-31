@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML - Exemplos básicos</title>
+<link rel="shortcut icon" href="imagens/favicon.ico" />
+<link rel="stylesheet" href="css/layout.css" type="text/css">
+</head>
+<body>
+
+<div id="navbar">
+  <a href="index.html">Home</a>
+  <a href="imagens.html">Imagens</a>
+  <a href="links.html">Links</a>
+  <a href="listas.html">Listas</a>
+  <a href="formularios.html">Formulários</a>
+  <a class="active" href="javascript:void(0)">Tabelas</a>
+</div>
+
+<div class="content">
+
+	<h3 id="rcorners1">TABELAS</h3>
+	<p class="subTitulo">Tabela com bordas largas.</p> 
+ 
+	<TABLE class="lightGreenTable">
+		<TR>
+			<TH>Nome</TH>
+			<TH>Endereço</TH>
+			<TH>Telefone</TH>
+		</TR>
+		<TR>
+			<TD> Maria Paula Soares </TD>
+			<TD> SQN 209 - Bloco K - Apto 602 </TD>
+			<TD> (061) 347 1234 </TD>
+		</TR>
+		<TR>
+			<TD> João Pedro Silveira</TD>
+			<TD> SQSW 303 - Bloco A Apto 301 </TD>
+			<TD> (061) 361 4321 </TD>
+		</TR>	
+		<TR>
+			<TD> Solange Maria Marques </TD>
+			<TD> SQN 212 - Bloco G - Apto 102 </TD>
+			<TD> (061) 222 5678 </TD>
+		</TR>
+		<TR>
+			<TD> Arnaldo Borges</TD>
+			<TD> SQSW 400 - Bloco H Apto 101 </TD>
+			<TD> (061) 322 3214 </TD>
+		</TR>	
+	</TABLE>
+	
+	<br>
+	<br>
+ 
+	<p class="subTitulo">Tabela com expansão de linhas e colunas.</p>
+ 
+	<TABLE class="darkGreenTable">
+		<TR>
+			<TH COLSPAN=3>1 Célula ocupando 3 colunas</TD>
+		</TR>
+		<TR>
+			<TH>Coluna1</TH>
+			<TH>Coluna2</TH>
+			<TH>Coluna3</TH>
+		</TR>
+		<TR>
+			<TD ROWSPAN=2>1 célula ocupando<br>2 linhas</TD>
+			<TD><A HREF="index.html"> Link: Voltar ao Início </A></TD>
+			<TD> célula</TD>
+		</TR>
+		<TR>
+			<TD>célula</TD>
+			<TD>célula</TD>
+		</TR>
+		<TR>
+			<TD>coluna1</TD>
+			<TD>coluna2</TD>
+			<TD>coluna3</TD>
+		</TR>
+	</TABLE>
+	
+	<br>
+	<br>
+ 
+	<p class="subTitulo">Tabela sem borda aparente.</p>
+	 
+	<table class="borderLess" >
+	  <tr>
+		<th>célula</th>
+		<th>sem</th>
+	  </tr>
+	  <tr>
+		<td>borda</td>
+		<td>aparente</td>
+	  </tr>
+	  <tr>
+		<td>célula</td>
+		<td>célula</td>
+	  </tr>
+	</table>
+
+ 
+</div>
+<script type="text/javascript" src="script/script.js"></script>
+
+</body>
+</html>
